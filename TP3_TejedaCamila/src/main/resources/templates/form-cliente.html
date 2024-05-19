@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TP3-TejedaCamila-formulario</title>
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+	<header>
+        <h1>Programacion Visual</h1>
+        <nav>
+            <ol>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Características</a></li>
+                <li><a href="">Diferencias entre C++ y JAVA</a></li>
+                <li><a href="">Recursos</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <h1>Formulario de Datos</h1>
+        <form>
+            <label for="dni">DNI:</label>
+            <input id="dni" type="number" required placeholder="Ingrese el DNI en número:"><br>
+            <label for="nombres">Nombres:</label>
+            <input id="nombres" type="text" required placeholder="Ingrese sus nombres:"><br>
+            <label for="apellidos">Apellidos:</label>
+            <input id="apellidos" type="text" required placeholder="Ingrese sus apellidos:"><br>
+            <label for="fnac">Fecha de Nacimiento:</label>
+            <input id="fnac" type="date" required placeholder="Ingrese su fecha de nacimiento:"><br>
+            <div>
+                <label for="generoM">Masculino:</label>
+                <input id="generoM" type="radio" value="Masculino" name="genero"><br>
+                <label for="generoF">Femenino:</label>
+                <input id="generoF" type="radio" value="Femenino" name="genero"><br>
+                <label for="generoX">X:</label>
+                <input id="generoX" type="radio" value="X" name="genero"><br>
+            </div>
+            <label for="correo">Correo electronico:</label>
+            <input id="correo" type="email" name="correo" placeholder="Ingrese su email" required><br>
+            <label for="domicilio">Domicilio:</label>
+            <input id="domicilio" type="text" name="domicilio" placeholder="Ingrese su domicilio" required><br>
+            <label for="provincia">Provincia:</label>
+            <select id="privincia" type="n" required placeholder="Ingrese su provincia" name="provincia">
+                <option value="Jujuy">Jujuy</option>
+            </select>
+
+            <label for="celular">Celular:</label>
+            <input id="celular" type="number" name="celular" placeholder="Ingrese su número de celular" required><br>
+            <label>Categorías de intereses:</label>
+            <div>
+                <label for="intereses">Futbol:</label>
+                <input id="intereses" type="checkbox" required name="intereses"><br>
+                <label for="intereses">Turismo:</label>
+                <input id="intereses" type="checkbox" required name="intereses"><br>
+            </div>
+            <label for="sugerencia">Sugerencias:</label><br>
+            <textarea id="sugerencia" placeholder="Ingrese comentarios" name="sugerencia" rows="8" cols="40"></textarea><br>
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password" placeholder="Ingrese el password" required maxlength="10" minlength="4"><br>
+            <label for="passwordDenuevo">Password nuevamente:</label>
+            <input id="passwordDenuevo" type="password" name="passwordDenuevo" placeholder="Ingrese el password de nuevo" required maxlength="10" minlength="4"><br>
+            <label for="t&c">Acepto los términos y condiciones:</label>
+            <input id="t&c" type="checkbox" required name="t&c"><br>
+            <label for="informacionRelativa">Acepto recibir informacion relativa a la empresa:</label>
+            <input id="informacionRelativa" type="checkbox" name="InfRel"><br>
+            <input type="button" value="Cancelar"><br>
+            <input type="submit" value="Guardar">
+        </form>
+    </main>
+    <footer>
+        <p>Correo: hsutter@microsoft.com (es preferible realizar las preguntas mediante el link de abajo)</p>
+        <p>Contacto:<a href="https://isocpp.org/about/contact">Link de la pagina del desarrollador</a></p>
+    </footer>
+</body>
+</html>

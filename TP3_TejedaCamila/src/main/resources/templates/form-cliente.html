@@ -1,33 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>TP3-TejedaCamila-formulario</title>
-<link rel="stylesheet" href="/css/styles.css">
+    <meta charset="UTF-8">
+    <title>TP3-TejedaCamila-formulario</title>
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
-<body>
-	<header>
-        <h1>Programacion Visual</h1>
-        <nav>
-            <ol>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Características</a></li>
-                <li><a href="">Diferencias entre C++ y JAVA</a></li>
-                <li><a href="">Recursos</a></li>
-            </ol>
-        </nav>
+<body class="cuerpo">
+	<header class="header">
+        <div class="menu container">
+            <h1>Programacion Visual</h1>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="/index#seccion1">Introducción</a></li>
+                    <li><a href="/index#seccion2">Tamaños asociados</a></li>
+                    <li><a href="/index#seccion3">Concepto de clase</a></li>
+                    <li><a href="/formulario">Formulario</a></li>
+              </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <h1>Formulario de Datos</h1>
-        <form>
+    <main class="main">
+        <h1 class="titulo">Formulario de Datos</h1>
+        <form class="formulario">
             <label for="dni">DNI:</label>
             <input id="dni" type="number" required placeholder="Ingrese el DNI en número:"><br>
+
             <label for="nombres">Nombres:</label>
             <input id="nombres" type="text" required placeholder="Ingrese sus nombres:"><br>
+
             <label for="apellidos">Apellidos:</label>
             <input id="apellidos" type="text" required placeholder="Ingrese sus apellidos:"><br>
+
             <label for="fnac">Fecha de Nacimiento:</label>
             <input id="fnac" type="date" required placeholder="Ingrese su fecha de nacimiento:"><br>
+
             <div>
                 <label for="generoM">Masculino:</label>
                 <input id="generoM" type="radio" value="Masculino" name="genero"><br>
@@ -36,41 +42,81 @@
                 <label for="generoX">X:</label>
                 <input id="generoX" type="radio" value="X" name="genero"><br>
             </div>
+
             <label for="correo">Correo electronico:</label>
             <input id="correo" type="email" name="correo" placeholder="Ingrese su email" required><br>
+
             <label for="domicilio">Domicilio:</label>
             <input id="domicilio" type="text" name="domicilio" placeholder="Ingrese su domicilio" required><br>
+
             <label for="provincia">Provincia:</label>
             <select id="privincia" type="n" required placeholder="Ingrese su provincia" name="provincia">
+                <option value="BuenosAires">Buenos Aires</option>
+                <option value="CABA">Ciudad Autónoma de Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Cordoba">Córdoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="EntreRios">Entre Rios</option>
+                <option value="Formosa">Formosa</option>
                 <option value="Jujuy">Jujuy</option>
-            </select>
+                <option value="LaPampa">La Pampa</option>
+                <option value="LaRioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquen">Neuquén</option>
+                <option value="RioNegro">Río Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="SanJuan">San Juan</option>
+                <option value="SanLuis">San Luis</option>
+                <option value="SantaCruz">Santa Cruz</option>
+                <option value="SantaFe">Santa Fé</option>
+                <option value="SantiagoDelEstero">Santiago del Estero</option>
+                <option value="TierraDelFuego">Tierra del fuego</option>
+                <option value="Tucuman">Tucumán</option>
+            </select><br>
 
             <label for="celular">Celular:</label>
             <input id="celular" type="number" name="celular" placeholder="Ingrese su número de celular" required><br>
+
             <label>Categorías de intereses:</label>
-            <div>
+            <div required>
                 <label for="intereses">Futbol:</label>
-                <input id="intereses" type="checkbox" required name="intereses"><br>
+                <input id="intereses" type="checkbox" name="intereses"><br>
                 <label for="intereses">Turismo:</label>
-                <input id="intereses" type="checkbox" required name="intereses"><br>
+                <input id="intereses" type="checkbox" name="intereses"><br>
+                <label for="intereses">Gastronomía:</label>
+                <input id="intereses" type="checkbox" name="intereses"><br>
             </div>
+
             <label for="sugerencia">Sugerencias:</label><br>
             <textarea id="sugerencia" placeholder="Ingrese comentarios" name="sugerencia" rows="8" cols="40"></textarea><br>
+            
             <label for="password">Password:</label>
             <input id="password" type="password" name="password" placeholder="Ingrese el password" required maxlength="10" minlength="4"><br>
+            
             <label for="passwordDenuevo">Password nuevamente:</label>
             <input id="passwordDenuevo" type="password" name="passwordDenuevo" placeholder="Ingrese el password de nuevo" required maxlength="10" minlength="4"><br>
+            
             <label for="t&c">Acepto los términos y condiciones:</label>
             <input id="t&c" type="checkbox" required name="t&c"><br>
+           
             <label for="informacionRelativa">Acepto recibir informacion relativa a la empresa:</label>
             <input id="informacionRelativa" type="checkbox" name="InfRel"><br>
-            <input type="button" value="Cancelar"><br>
+            
+            <input type="button" value="Cancelar">
             <input type="submit" value="Guardar">
         </form>
     </main>
     <footer>
-        <p>Correo: hsutter@microsoft.com (es preferible realizar las preguntas mediante el link de abajo)</p>
-        <p>Contacto:<a href="https://isocpp.org/about/contact">Link de la pagina del desarrollador</a></p>
+		<p>Contacto</p>
+			<a>Correo: virtual@unju.edu.fi</a><br>
+			<a>Teléfono: 0388 - 154708223</a><br>
+        	<a href="https://www.facebook.com/universidadnacionaldejujuy/">Facebook</a><br>
+			<a href="https://x.com/prensaunju?lang=es">Twitter</a><br>
+			<a href="https://x.com/prensaunju?lang=es">Instagram</a><br>
+			<a href="https://tv.unju.edu.ar">UNJuTV</a><br>
     </footer>
 </body>
 </html>

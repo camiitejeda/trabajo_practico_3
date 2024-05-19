@@ -19,6 +19,7 @@ footer {
     background-size: cover;
     display: flex;
     align-items: center;
+	font-size: medium;
 }
 
 .header {
@@ -43,13 +44,13 @@ footer {
 	
 }
 
-#h1 {
-    color: #F5F5EB;
-    height: max-content;
-    font-size: 25px;
-    font-weight: 800;
+.titulo{
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 20px;
+	color: #5a5244;
 }
-
 .cuerpo {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -128,3 +129,32 @@ footer {
     background-color: #EFE7DA;
 }
 
+.formulario{
+	font-weight: bolder;
+	padding: 30px;
+    color: #5a5244;
+	margin-left: 37%;
+	text-align: left;
+	padding-bottom: 10px;
+}
+label{
+	margin-bottom: 10px;
+}
+input{
+	background-color: #C1B6A3;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px; 
+	height: 25px;
+	border-color: #5a5244;
+	border-style: groove;
+	margin-bottom: 10px;
+}
+select{
+	background-color: #C1B6A3;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px; 
+	height: 25px;
+	border-color: #5a5244;
+	border-style: groove;
+	margin-bottom: 10px;
+}

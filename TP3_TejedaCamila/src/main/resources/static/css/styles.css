@@ -1,0 +1,160 @@
+@charset "UTF-8";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+footer {
+    background-color: #C1B6A3;
+	padding: 30px;
+	list-style: none;
+}
+
+#header {
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+	font-size: medium;
+}
+
+.header {
+    color: #F5F5EB;
+    background-color: #C1B6A3
+}
+
+.main {
+    background-color: #EFE7DA;
+	flex: 3;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imagen{
+	display: flex;
+	flex: 1;
+	padding: 10px;
+	
+}
+
+.titulo{
+	margin: auto;
+	text-align: center;
+	padding-top: 20px;
+	padding-left: 20px;
+	color: #5a5244;
+}
+.cuerpo {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.menu {
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#menu {
+    display: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+	list-style: none;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #F5F5EB;
+    display: block;
+    font-weight: 600;
+}
+
+.menu .navbar ul li a:hover {
+    color: #5a5244;
+}
+
+#seccion1 {
+    padding: 30px;
+    color: #5a5244;
+    background-color: #EFE7DA;
+}
+
+.sangria {
+    text-indent: 20px;
+}
+
+.tabla {
+    margin: auto;
+    justify-content: center;
+    border: 2px solid #5a5244;
+    width: 35%;
+	background-color: #C1B6A3;
+}
+
+.tabla tr td {
+    border: 2px solid #5a5244;
+    width: 20%;
+    padding: 8px;
+	background-color: #EFE7DA;
+}
+
+#seccion2 {
+    padding: 30px;
+    color: #5a5244;
+    background-color: #E1DACA;
+}
+
+
+.lista{
+    list-style-type: disc;
+	margin-left: 30px;
+}
+
+#seccion3{
+	padding: 30px;
+    color: #5a5244;
+    background-color: #EFE7DA;
+}
+
+.formulario{
+	font-weight: bolder;
+	padding: 30px;
+    color: #5a5244;
+	margin-left: 37%;
+	text-align: left;
+	padding-bottom: 10px;
+}
+label{
+	margin-bottom: 10px;
+}
+input{
+	background-color: #C1B6A3;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px; 
+	height: 25px;
+	border-color: #5a5244;
+	border-style: groove;
+	margin-bottom: 10px;
+}
+select{
+	background-color: #C1B6A3;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 200px; 
+	height: 25px;
+	border-color: #5a5244;
+	border-style: groove;
+	margin-bottom: 10px;
+}
